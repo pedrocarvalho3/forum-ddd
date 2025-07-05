@@ -2,6 +2,10 @@
   "name": "forum-ddd",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.14.0",
