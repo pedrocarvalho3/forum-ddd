@@ -38,11 +38,11 @@ export class ChooseQuestionBestAnswerUseCase {
     );
 
     if (!question) {
-      return left(new NotAllowedError());
+      return left(new ResourceNotFoundError());
     }
 
     if (authorId !== question.authorId.toString()) {
-      throw new Error("Not allowed.");
+      return left(new NotAllowedError());
     }
 
     question.bestAnswerId = answer.id;
