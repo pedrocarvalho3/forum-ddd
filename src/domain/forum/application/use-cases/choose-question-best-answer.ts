@@ -1,4 +1,4 @@
-import { AnswersRepository } from "../repositories/answers.repository";
+import { AnswersRepository } from "../repositories/answers-repository";
 import { Question } from "@/domain/forum/enterprise/entities/question";
 import { QuestionsRepository } from "@/domain/forum/application/repositories/questions-repository";
 import { Either, left, right } from "@/core/either";
